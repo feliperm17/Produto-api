@@ -1,0 +1,20 @@
+{
+  "name": "produto-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start:prod": "node ./dist/main.js",
+    "start:dev": "ts-node-dev ./src/main.ts",
+    "create:db": "docker run -d --name carona -p 5433:5432 -e POSTGRES_PASSWORD=123456 postgres:13.5",
+    "seed": "ts-node-dev ./prisma/seed.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "pg": "^8.13.0"
+  }
+}
