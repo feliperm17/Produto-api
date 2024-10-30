@@ -51,12 +51,3 @@ class Produto {
         };
     }
 }
-
-// Exemplo de uso
-const novoProduto = Produto.create({
-    descricao: "Produto B",
-    preco: 150.00,
-    estoque: 30,
-});
-
-console.log(novoProduto.toJSON());
