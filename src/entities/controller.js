@@ -49,7 +49,7 @@ const deleteProduto = (req, res) => {
 
 const updateProduto = (req, res) => {
     const id = parseInt(req.params.id);
-    const { descricao } = req.body;
+    const { descricao, preco, estoque, data } = req.body;
 
     pool.query(queries.getProdutoById, [id], (error, results) => {
         const produtoNaoEncontrado = !results.rows.length;
@@ -58,7 +58,7 @@ const updateProduto = (req, res) => {
             res.send("Produto Não Encontrado");
         }
 
-        pool.query(queries.updateProduto, [descricao, id], (error, results) => {
+        pool.query(queries.updateProduto, [descricao, preco, estoque, data, id], (error, results) => {
             if (error) throw error
             res.status(200).send("Produto Atualizado com sucesso");
         });
