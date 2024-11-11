@@ -26,16 +26,7 @@ Este projeto fornece uma API para gerenciar produtos, incluindo criação, atual
    ```bash
    npm install
    ```
-
-3. **Execute o PostgreSQL com Docker**:
-
-   Para iniciar uma imagem do PostgreSQL com Docker, execute o comando:
-
-   ```bash
-   npm run create:db
-   ```
-
-4. **Configure as variáveis de ambiente**:
+3. **Configure as variáveis de ambiente**:
 
    Na raiz do projeto, crie um arquivo `.env` com as seguintes variáveis:
 
@@ -48,7 +39,7 @@ Este projeto fornece uma API para gerenciar produtos, incluindo criação, atual
    DB_PORT=5432                # Porta do banco de dados
    ```
 
-5. **Crie as tabelas no banco de dados**:
+4. **Crie as tabelas no banco de dados**:
 
    Execute a migração para criar a estrutura das tabelas:
 
@@ -56,7 +47,7 @@ Este projeto fornece uma API para gerenciar produtos, incluindo criação, atual
    npm run migration
    ```
 
-6. **Inicie a API em modo de desenvolvimento**:
+5. **Inicie a API em modo de desenvolvimento**:
 
    Use o comando abaixo para iniciar o servidor:
 
