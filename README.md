@@ -1,4 +1,3 @@
-```markdown
 # PRODUTO-API
 
 Este projeto fornece uma API para gerenciar produtos, incluindo criação, atualização, consulta e remoção de produtos. A API foi construída em Node.js com o framework Express e usa PostgreSQL para armazenamento dos dados.
