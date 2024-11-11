@@ -1,5 +1,3 @@
-Aqui está o README completo para o backend do projeto **produto-api**:
-
 ```markdown
 # PRODUTO-API
 
